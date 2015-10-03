@@ -1,3 +1,4 @@
 module.exports = {
-  getMerkleProof: require('./lib/getMerkleProof.js')
+  getMerkleProof: require('./lib/getMerkleProof.js'),
+  verifyMerkleProof: require('./lib/verifyMerkleProof.js')
 };

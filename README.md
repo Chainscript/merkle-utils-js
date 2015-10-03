@@ -46,3 +46,22 @@ Ouput:
 	}
 ]
 ```
+
+## API
+
+### verifyMerkleProof(proof, target, root, hashFuncName)
+
+Verifies a merkle proof.
+
+Ex:
+
+```js
+var merkle = require('merkle');
+var getMerkleProof = require('../lib/getMerkleProof');
+var verifyMerkleProof = require('../lib/verifyMerkleProof');
+
+var tree = merkle('sha256').sync(['a', 'b', 'c', 'd', 'e']);
+var proof = getMerkleProof(tree, 2);
+
+verifyMerkleProof(proof, tree.level(3)[2], tree.root(), 'sha256'); // true
+```
