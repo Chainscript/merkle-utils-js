@@ -55,8 +55,8 @@ Ex:
 
 ```js
 var merkle = require('merkle');
-var getMerkleProof = require('../lib/getMerkleProof');
-var verifyMerkleProof = require('../lib/verifyMerkleProof');
+var getMerkleProof = require('merkle-utils').getMerkleProof;
+var verifyMerkleProof = require('merkle-utils').verifyMerkleProof;
 
 var tree = merkle('sha256').sync(['a', 'b', 'c', 'd', 'e']);
 var proof = getMerkleProof(tree, 2);
