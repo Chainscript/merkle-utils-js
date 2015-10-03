@@ -2,7 +2,6 @@
 *.log
 *.pdf
 node_modules
-lib
 dist
 coverage
 _book
