@@ -47,8 +47,6 @@ Ouput:
 ]
 ```
 
-## API
-
 ### verifyMerkleProof(proof, target, root, hashFuncName)
 
 Verifies a merkle proof.
