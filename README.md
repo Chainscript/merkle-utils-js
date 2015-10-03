@@ -1,6 +1,15 @@
 # Merkle Utils
 
-## getMerkleProof(tree, leafIndex)
+## Install
+
+```bash
+npm install --save merkle
+npm install --save merkle-utils
+```
+
+## API
+
+### getMerkleProof(tree, leafIndex)
 
 Get merkle proof of tree for the leaf at specified index.
 
